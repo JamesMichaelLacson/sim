@@ -1,10 +1,10 @@
 pipeline {
     agent { label 'master' }
     stages {
-        stage('build') {
+        stage('run') {
             steps {
                 echo "Clarusway_Way to Reinvent Yourself"
-                sh 'echo using sfhell within Jenkinsfile!'
+                sh 'python3 pipeline.py'
                 echo 'not using shell in the Jenkinsfile'
             }
         }
